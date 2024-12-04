@@ -80,5 +80,54 @@ else:
 
 
 
+## 06. Clasificación de provincias por región
+
+provincia = input("Ingresa una provincia por favor:")
+
+noa = ["Tucuman" , "La Rioja" , "Catamarca" , "Santiago del Estero" , "Salta" , "Jujuy"]
+cuyo = ["Mendoza" , "San Juan" , "San Luis"]
+patagonia = ["Neuquen" , "Rio Negro" , "Chubut" , "Santa Cruz" , "Tierra del Fuego"]
 
 
+if provincia in noa:
+    print("Región del NOA")
+elif provincia in cuyo:
+    print("Región del Cuyo")
+elif provincia in patagonia:
+    print("Región de la Patagonia")
+else:
+    print("Provincia No registrada")
+
+
+## 07. Prnóstico de estaciones
+
+estaciones = input("Ingresa una estación:")
+
+verano = ["Diciembre" , "Enero" , "Febrero"]
+otoño = ["Marzo" , "Abril" , "Mayo"]
+invierno = ["Junio" , "Julio" , "Agosto"]
+primavera = ["Septiembe" , "Octubre" , "Noviembre"]
+
+if estaciones in verano:
+    print("Estamos en verano")
+elif estaciones in otoño:
+    print("Estamos en Otoño")
+elif estaciones in invierno:
+    print("Estamos en invierno")
+elif estaciones in primavera:
+    print("Estamos en Primavera")
+
+else:
+    print("No a ingresado ninguna estación")
+
+
+## 08. Inpuesto a las ganancias
+
+salario = int(input("Ingresa tu salario: "))
+
+if salario < 2500000:
+    print("Estás exento, no debes pagar impuestos.")
+elif 2500000 <= salario <= 4500000:
+    print("Te corresponde pagar un 20% de impuesto.")
+else:  # No es necesario otro elif porque ya hemos cubierto todos los casos.
+    print("Te corresponde pagar un 35% de impuesto.")
