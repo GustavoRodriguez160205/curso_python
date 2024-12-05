@@ -27,4 +27,3 @@ resultado10 = not False # Devuelve true
 ## NOT es simple: toma lo que tenés y lo invierte. 
 ## Lo que era True se vuelve False, y lo que era False se vuelve True. Es como cambiar de opinión.
 
-print(resultado9)
