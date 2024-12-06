@@ -62,6 +62,7 @@ print(f"Lista con Reverse: {colores}")
 
 ## Aclaración: Busca elementos completos
 
+## 11. Saber si se encuentra en la lista
 lista_De_prueba = [10 , 20 , 30 , 40 , 55 , 66 , 77]
 elemento_encontrado = lista_De_prueba.index(77)
 print(f"El elemento encontrado en la lista: {elemento_encontrado}")
