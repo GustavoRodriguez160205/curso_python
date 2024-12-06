@@ -30,8 +30,29 @@ oracion_separada = oracion.split("-")
 print("Oración separada:", oracion_separada)
 
 
-## 0. Eliminar espacios en blanco
+## 05. Eliminar espacios en blanco
 
 sin_espacios = input("Ingresa una oración: ")
 sin_espacios_sin_bordes = sin_espacios.strip()  
 print("Oración sin espacios:", sin_espacios_sin_bordes)
+
+
+## 06. Nombre de provincias
+
+provincia = 'tucumán'
+
+provincia_mayuscula = provincia.upper()
+print(f"La provincia en mayúscula queda: {provincia_mayuscula}")
+
+## 07. Modifica el texto
+
+texto = "Buenos Aires es la capital de la república"
+texto_reemplazado = texto.replace("Buenos Aires" , "Tucumán")
+print(f"El texto reemplazado queda asi: {texto_reemplazado}")
+
+
+## 08. Cuantas veces apareces?
+
+texto = "Argentina es un país de Sudamérica. Argentina tiene mucha diversidad."
+coinciendias = texto.count("e")
+print(f"Aparece: {coinciendias}")
