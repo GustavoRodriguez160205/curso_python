@@ -26,3 +26,18 @@ print(f"La cadena en mayúscula queda así: {may}")
 
 min_ = input("Ingresa una cadena para poner en minúscula: ").lower()
 print(f"La cadena en minúscula queda así: {min_}")
+
+
+## 05. Eliminar espacios Extras
+
+frase = " Hola , mundo "
+frase_sin_espacios = frase.strip()
+print(f"La frase sin espacios queda asi: {frase_sin_espacios}")
+
+
+
+## 06. Buscar Subcadenas
+
+repite = input("Ingresa una frase y te diré cuántas veces se repite 'Python': ").strip()
+contar_frase = repite.lower().count("python")
+print(f"La palabra 'Python' se repite: {contar_frase} veces.")
