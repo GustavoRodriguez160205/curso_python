@@ -77,3 +77,62 @@ elif edades == 18 and edades <= 60:
 elif edades >= 60:
     print("Sos un jubilado")
 
+
+
+### 05.
+## Ejercicio de Calificación de Estudiantes
+
+## En Argentina, las calificaciones se dan en una escala de 1 a 10. Escribe un programa que:
+##Pida al usuario que ingrese la calificación.
+## - Imprima el mensaje correspondiente según la calificación:
+## - Menor a 4: "Reprobado"
+## - Entre 4 y 6 (inclusive): "Aprobado"
+## - Entre 7 y 8 (inclusive): "Muy bueno"
+## - Entre 9 y 10 (inclusive): "Excelente"
+
+nota = int(input("Ingresa una nota por favor:"))
+
+if nota < 4:
+    print(f"Estás reprobado, tu nota es: {nota}")
+elif 4 <= nota <= 6:
+    print(f"Estás Regular, tu nota es: {nota}. Vas a tener que ir al final")
+elif 7 <= nota <= 8:
+    print(f"Estás Promocionado, tu nota es: {nota}")
+elif 9 <= nota <= 10:
+    print(f"Estás más que promocionado. Tu nota final es: {nota}")
+else:
+    print("Nota inválida")
+
+
+### 06.
+## Ejercicio de Elección de Comida Típica
+## En Argentina, hay platos típicos de diferentes regiones. Escribe un programa que:
+
+## Pida al usuario que ingrese una provincia.
+##  Según la provincia, el programa debe sugerir una comida típica:
+## - Buenos Aires: "Asado"
+## - Córdoba: "Cuarto de cordero"
+## - Mendoza: "Empanadas"
+## - Tucumán: "Tamales"
+## - Salta: "Locro"
+
+city_ingresada = input("Ingresa una ciudad por favor: ").strip()  # strip() para eliminar espacios extra
+
+# Convertir a minúsculas para validar sin importar las mayúsculas/minúsculas
+city_ingresada = city_ingresada.lower()
+
+# Validación para asegurar que se ingresó algo
+if not city_ingresada:
+    print("No ingresaste ninguna ciudad.")
+elif city_ingresada == "buenos aires":
+    print(f"Si es {city_ingresada.title()}, te recomiendo comer un buen Asado.")
+elif city_ingresada == "cordoba":
+    print(f"Si es {city_ingresada.title()}, te recomiendo comer un Cuarto de Cordero.")
+elif city_ingresada == "mendoza":
+    print(f"Si es {city_ingresada.title()}, te recomiendo comer unas Empanadas.")
+elif city_ingresada == "tucumán":
+    print(f"Si es {city_ingresada.title()}, te recomiendo comer unos Tamales.")
+elif city_ingresada == "salta":
+    print(f"Si es {city_ingresada.title()}, te recomiendo comer un Locro.")
+else:
+    print("La ciudad ingresada no está en nuestra lista de recomendaciones.")
